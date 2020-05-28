@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.first-screen {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.first-screen-content,
+.first-screen-image {
+    width: 50%;
+    line-height: 0;
+}
+
+.first-screen-content {
+    background: #112D36;
+    line-height: 1.5;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.first-screen-image {
+    padding: 50% 0 0 0;
+    background: url("../img/main-pic.jpg") no-repeat 50% 50% / cover;
+}
+
+.main-headline {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-size: 46px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.disclaimer {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.2;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+
+.b-socials {}
+.b-socials .social-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+.b-socials .social-link svg,
+.b-socials .social-link svg path {
+    fill: #FA3737;
+}
+
+
+.description-screen {}
+
+.episode-box {
+    padding: 60px 100px;
+}
+.episode-box:nth-child(odd){
+    background: #FAE3E3;
+}
+.episode-box .episode-name {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.episode-box .episode-description {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.episode-box .iframe-wrap {}
+
+
+
+.more-screen {
+    padding: 60px 100px;
+    background: #29369A;
+    text-align: center;
+}
+
+.more-screen p {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.more-screen a {
+    color: #FA3737;
+    white-space: nowrap;
+}
+
+
+.footer {
+    padding: 100px;
+    text-align: center;
+    background: #112D36;
+
+}
+.footer .footer-headline {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-headline {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .first-screen-content,
+    .episode-box,
+    .more-screen,
+    .footer {
+        padding: 30px 5%;
+    }
+    .main-headline {
+        font-size: 28px;
+    }
+    .main-content {
+        font-size: 14px;
+    }
+    .b-socials .social-link svg {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .first-screen {
+        flex-direction: column-reverse;
+    }
+    .first-screen-content,
+    .first-screen-image {
+        width: 100%;
+    }
+    .first-screen-image {
+        padding: 100% 0 0 0;
+    }
+
+    .more-screen p,
+    .footer .footer-headline {
+        font-size: 20px;
+    }
+    .b-socials .social-link svg {
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
