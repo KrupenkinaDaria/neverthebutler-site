@@ -71,15 +71,6 @@ table {
     justify-content: center;
 }
 
-
-.first-screen-image {
-    padding: 50% 0 0 0;
-    background-image: url(../img/main_pic_xl.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-}
-
 .main-headline {
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
@@ -105,6 +96,44 @@ table {
     margin-bottom: 50px;
 }
 
+
+.first-screen-image {
+    overflow: hidden;
+    position: relative;
+    padding: 50% 0 0 0;
+    background-image: url(../img/butler.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.first-screen-main-title {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: 10%;
+    transform: translateX(-50%);
+    background: rgba(250, 227, 227, 0.94);
+    padding: 30px 30px;
+    text-align: center;
+    color: #993232;
+    line-height: 1.4;
+
+}
+.main-title-headline {
+    white-space: nowrap;
+    font-size: 46px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+.main-title-subhead {
+    display: block;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
 
 .b-socials {}
 .b-socials .social-link {
@@ -179,6 +208,7 @@ table {
 }
 
 @media screen and (max-width: 1200px) {
+    .main-title-headline,
     .main-headline {
         font-size: 34px;
     }
@@ -191,8 +221,12 @@ table {
     .footer {
         padding: 30px 5%;
     }
+    .main-title-headline,
     .main-headline {
         font-size: 28px;
+    }
+    .main-title-subhead {
+        font-size: 16px;
     }
     .main-content {
         font-size: 14px;
@@ -220,6 +254,37 @@ table {
     }
     .b-socials .social-link svg {
         width: 40px;
+    }
+    .main-title-headline {
+        font-size: 34px;
+        margin-bottom: 5px;
+    }
+    .main-title-subhead {
+        font-size: 16px;
+    }
+    .first-screen-main-title {
+        left: 5%;
+        right: 5%;
+        transform: none;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-title-headline {
+        font-size: 24px;
+    }
+    .main-title-subhead {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .main-title-headline {
+        font-size: 15px;
+    }
+    .main-title-subhead {
+        font-size: 10px;
     }
 }
 
