@@ -93,7 +93,7 @@ table {
     color: #ffffff;
     opacity: 0.2;
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 
@@ -135,7 +135,9 @@ table {
     letter-spacing: 4px;
 }
 
-.b-socials {}
+.b-socials {
+    margin-bottom: 20px;
+}
 .b-socials .social-link {
     text-decoration: none;
     display: inline-block;
@@ -144,6 +146,17 @@ table {
 .b-socials .social-link svg,
 .b-socials .social-link svg path {
     fill: #FA3737;
+}
+
+.b-support {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+.b-support a {
+    color: #FA3737;
 }
 
 
