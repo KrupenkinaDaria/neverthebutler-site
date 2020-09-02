@@ -205,13 +205,19 @@ table {
 
 
 .footer {
-    padding: 100px;
-    text-align: center;
+    padding: 80px;
+    text-align: left;
     background: #112D36;
-
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer .side {
+    width: 48%;
 }
 .footer .footer-headline {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
@@ -280,6 +286,20 @@ table {
         right: 5%;
         transform: none;
         padding: 20px;
+    }
+
+
+    .footer {
+        display: block;
+    }
+    .footer .side {
+        width: 100%;
+    }
+    .footer .footer-headline {
+        margin-bottom: 20px;
+    }
+    .footer .side:first-child{
+        margin-bottom: 30px;
     }
 }
 
