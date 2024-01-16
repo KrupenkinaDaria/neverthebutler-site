@@ -109,6 +109,9 @@ table {
     background-position: 50% 50%;
     background-size: cover;
 }
+.first-screen-image.photo {
+  background-image: url(../img/dasha.jpg);
+}
 .first-screen-main-title {
     position: absolute;
     left: 50%;
@@ -182,6 +185,10 @@ table {
     display: block;
     margin-bottom: 30px;
     font-size: 18px;
+    max-width: 1000px;
+}
+.episode-box .episode-description b {
+  font-weight: bold;
 }
 .episode-box .iframe-wrap {
     padding: 20px;
@@ -232,6 +239,16 @@ table {
     margin: 0 auto 40px;
     color: #ffffff;
 }
+.footer-content {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer-content a {
+  color: #FAE3E3;
+}
+
 
 @media screen and (max-width: 1200px) {
     .main-title-headline,
